@@ -2,10 +2,6 @@
 @import "./chip.css";
 @import "./widgets.css";
 
-.with-sidebar > :first-child {
-  flex-basis: 15rem;
-}
-
 @media (min-width: 100px) and (max-width: 767px) {
   .widget-chip {
     /* padding-inline: 1rem; */
@@ -29,6 +25,8 @@
   }
   .widget-chip {
     box-sizing: content-box;
+    block-size: 2.5rem;
+    inline-size: 2.5rem;
     padding: 0.75rem;
     border: 1px solid var(--color_principal);
     border-radius: 50%;

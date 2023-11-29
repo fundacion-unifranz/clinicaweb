@@ -6340,49 +6340,6 @@ textarea.form-control {
   background-color: #ffffff;
 }
 
-.widget-services ul li {
-  margin-bottom: 4px;
-}
-.widget-services ul li:last-child {
-  margin-bottom: 0;
-}
-.widget-services ul li a {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 19px;
-  font-weight: 700;
-  padding: 22px 30px;
-  text-transform: capitalize;
-  /* border-radius: 5px; */
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  font-family: "Quicksand", sans-serif;
-  color: var(--color_principal);
-  background-color: #ffffff;
-  transition: all 0.4s ease;
-  margin-left: -40px;
-}
-
-.widget-services ul li a:hover {
-  color: #ffffff;
-  background-color: #21cdc0;
-}
-
-.widget-services ul li a img:nth-child(2) {
-  display: none; /* Muestra el segundo img al hacer hover en <a> */
-}
-
-.widget-services ul li a:hover img:nth-child(2) {
-  display: block; /* Muestra el segundo img al hacer hover en <a> */
-}
-
-/* Estilo para el primer img cuando se hace hover en la etiqueta <a> */
-.widget-services ul li a:hover img:nth-child(1) {
-  display: none; /* Oculta el primer img al hacer hover en <a> */
-}
-
 .widget-tags ul {
   display: flex;
   flex-wrap: wrap;
@@ -6675,25 +6632,6 @@ textarea.form-control {
 }
 /* Mobile Phones and tablets */
 @media (min-width: 320px) and (max-width: 767px) {
-  .widget-services ul li a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
-    font-weight: 700;
-    padding: 22px 30px;
-    text-transform: capitalize;
-    /* border-radius: 5px; */
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    font-family: "Quicksand", sans-serif;
-    color: var(--color_principal);
-    background-color: #ffffff;
-    transition: all 0.4s ease;
-    margin-left: -20px;
-  }
-
   .widget {
     padding: 15px;
   }
