@@ -1,0 +1,53 @@
+.widget {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+/* Widget Help */
+.widget-help .widget__icon {
+  font-size: 3.5rem;
+  margin-bottom: 4px;
+}
+.widget-help .widget__icon,
+.widget-help .widget__title,
+.widget-help .widget__desc {
+  color: #ffffff;
+}
+.widget-help .phone__number {
+  font-size: 24px;
+  margin-top: 5px;
+  color: #ffffff !important;
+}
+.widget-help .phone__number .icon-phone {
+  font-size: 17px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 10px;
+  background-color: #3851a2;
+}
+
+/* Widget schedule */
+.widget-schedule {
+  background-color: #f6f6f6;
+}
+.widget-schedule .widget__icon {
+  color: var(--color_principal);
+  font-size: 50px;
+  margin-bottom: 6px;
+}
+
+.time__list li {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dcdee2;
+}
+.time__list li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}

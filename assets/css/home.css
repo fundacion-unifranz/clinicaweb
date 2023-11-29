@@ -1,0 +1,23 @@
+@import "./layouts.css";
+
+@import "./header.css";
+
+.hero {
+  width: 100%;
+  block-size: 90dvh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 10rem; */
+}
+
+.back-video {
+  position: absolute;
+  inline-size: 100dvw;
+  block-size: 80dvh;
+  top: 0;
+  right: 0;
+  border: 0;
+  z-index: -1;
+}

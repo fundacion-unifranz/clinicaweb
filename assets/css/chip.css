@@ -1,0 +1,30 @@
+.widget-chip {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-block: 0.5rem;
+  font-weight: 700;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  color: var(--color_principal);
+}
+
+.widget-chip:hover {
+  color: #ffffff;
+  background-color: #21cdc0;
+}
+
+.widget-chip img:nth-child(2) {
+  display: none; /* Muestra el segundo img al hacer hover en <a> */
+}
+
+.widget-chip:hover img:nth-child(2) {
+  display: block; /* Muestra el segundo img al hacer hover en <a> */
+}
+
+/* Estilo para el primer img cuando se hace hover en la etiqueta <a> */
+.widget-chip:hover img:nth-child(1) {
+  display: none; /* Oculta el primer img al hacer hover en <a> */
+}

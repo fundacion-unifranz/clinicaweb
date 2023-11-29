@@ -1,0 +1,198 @@
+/*--------------------
+   Buttons
+---------------------*/
+.btn {
+  text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: 700;
+  min-width: 170px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.btn:focus,
+.btn.active,
+.btn:active {
+  box-shadow: none;
+  outline: none;
+}
+.btn span,
+.btn i {
+  margin: 0 3px;
+}
+.btn .icon-filled {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+.btn:not(.btn__link):not(.btn__outlined):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--color_accion);
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.24s cubic-bezier(0.37, 0.31, 0.31, 0.9);
+}
+.btn:not(.btn__link):not(.btn__outlined):hover:before {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.btn__primary {
+  color: var(--color_principal);
+  background-color: #fff;
+  border: 2px solid var(--color_accion);
+}
+.btn__primary .icon-outlined {
+  color: var(--color_principal);
+  border: 1px solid #21cdc0;
+  color: #21cdc0;
+  background-color: #ffffff;
+}
+.btn__primary .icon-filled {
+  color: #ffffff;
+  background-color: #21cdc0;
+}
+.btn__primary:active,
+.btn__primary:focus {
+  color: #ffffff;
+  border-color: #21cdc0;
+  background-color: #21cdc0;
+}
+.btn__primary:hover {
+  color: #ffffff;
+}
+.btn__primary:hover .icon-outlined {
+  color: var(--color_principal);
+  background-color: #fff;
+}
+.btn__primary:hover .icon-filled {
+  color: #ffffff;
+  background-color: var(--color_principal);
+}
+.btn__primary.btn__outlined {
+  background-color: transparent;
+  border: 2px solid #21cdc0;
+  color: #21cdc0;
+}
+.btn__primary.btn__outlined .icon-arrow-right,
+.btn__primary.btn__outlined .icon-arrow-left {
+  color: #ffffff;
+  background-color: #21cdc0;
+}
+.btn__primary.btn__outlined:hover {
+  color: #ffffff;
+  background-color: #21cdc0;
+}
+.btn__primary.btn__outlined:hover .icon-arrow-right,
+.btn__primary.btn__outlined:hover .icon-arrow-left {
+  color: #21cdc0;
+  background-color: #ffffff;
+}
+
+.btn__secondary {
+  color: #ffffff;
+  background-color: var(--color_principal);
+}
+.btn__secondary:before {
+  background-color: #21cdc0 !important;
+}
+.btn__secondary .icon-filled {
+  color: #ffffff;
+  background-color: var(--color_principal);
+}
+.btn__secondary:hover {
+  color: #ffffff;
+}
+.btn__secondary:hover .icon-filled {
+  background-color: #21cdc0;
+}
+.btn__secondary:active,
+.btn__secondary:focus {
+  color: #ffffff;
+  border-color: #222222;
+  background-color: #222222;
+}
+
+.btn__secondary.btn__outlined:hover {
+  color: #ffffff;
+  background-color: var(--color_principal);
+}
+
+.btn__link {
+  background-color: transparent;
+  border-color: transparent;
+  min-width: 0;
+  line-height: 1;
+  height: auto;
+  padding: 0;
+  border: 0 !important;
+  border-radius: 0;
+}
+.btn__link:focus,
+.btn__link:active {
+  background-color: transparent;
+}
+.btn__link.btn__icon {
+  height: auto;
+  line-height: 1;
+  padding: 0;
+}
+.btn__link.btn__primary {
+  color: #21cdc0;
+}
+.btn__link.btn__primary-style2:hover {
+  color: #ffffff !important;
+}
+.btn__link.btn__primary.btn__underlined {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #21cdc0;
+}
+.btn__link.btn__primary:hover {
+  color: #222222;
+}
+.btn__link.btn__primary:hover.btn__underlined {
+  border-color: var(--color_principal);
+}
+.btn__link.btn__secondary {
+  color: var(--color_principal);
+}
+.btn__link.btn__secondary:hover {
+  color: #21cdc0;
+}
+.btn__link.btn__white {
+  color: #ffffff;
+}
+.btn__link.btn__white.btn__underlined {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #ffffff;
+}
+.btn__link.btn__white:hover {
+  color: var(--color_principal);
+}
+.btn__link.btn__white:hover.btn__underlined {
+  border-color: var(--color_principal);
+}
+
+.btn__rounded {
+  border-radius: 50px;
+}

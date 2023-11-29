@@ -1,0 +1,64 @@
+.frame {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frame > img,
+.frame > video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  /* The default value is the first point on the modular scale */
+  gap: var(--gutter, var(--s1));
+}
+.with-sidebar > :first-child {
+  /* The width when the sidebar _is_ a sidebar */
+  flex-basis: 20rem;
+  flex-grow: 1;
+}
+
+.with-sidebar > :last-child {
+  /* Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  /* Wrap when the elements are of equal width */
+  min-inline-size: 50%;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  /* Any extant vertical margins are removed. Not needed if globally setup */
+  margin-block: 0;
+}
+
+.stack > * + * {
+  /* Top margin is only applied to successive elements */
+  margin-block-start: var(--space, 1rem);
+}
+
+.cluster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cluster-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, 1rem);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
