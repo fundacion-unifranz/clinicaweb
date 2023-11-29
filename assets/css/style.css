@@ -1,12 +1,12 @@
-/*----------- Estilos globales -----------*/
-@import "./globals.css";
-@import "typography.css";
-@import "./buttons.css";
-
 /*----------- Estilos de páginas -----------*/
 @import "./home.css"; /* Vacío */
 @import "./about.css"; /* Vacío */
 @import "./services.css";
+
+/*----------- Estilos globales -----------*/
+@import "./globals.css";
+@import "typography.css";
+@import "./buttons.css";
 
 * {
   /* border: 1px solid red; */
@@ -6164,6 +6164,8 @@ textarea.form-control {
 .widget-plan {
   border-radius: 13px;
   border: 2px solid #e6e8eb;
+  display: flex;
+  justify-content: space-around;
 }
 .widget-plan .widget__body {
   padding: 50px;
@@ -6199,6 +6201,9 @@ textarea.form-control {
 }
 /* Mobile Phones & tablets and Small Screens */
 @media (max-width: 992px) {
+  .widget-plan {
+    display: block;
+  }
   .widget-plan .widget__body {
     padding: 20px;
   }
